@@ -9,7 +9,7 @@
  * For example:
  *   => `node app.js`
  *   => `forever start app.js`
- *   => `node debug app.js`
+   *   => `node debug app.js`
  *   => `modulus deploy`
  *   => `heroku scale`
  *
