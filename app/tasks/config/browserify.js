@@ -4,7 +4,7 @@ module.exports = function(grunt) {
           options: {
             transform: [['babelify', {presets: ['es2015', 'react']}]]
           },
-          src: ['./assets/js/testApp.js'],
+          src: ['./assets/js/app.jsx'],
           dest: '.tmp/public/js/app.js',
     }
   });

@@ -26,7 +26,14 @@ module.exports = function(grunt) {
       files: [{
         expand: true,
         cwd: './assets',
-        src: ['**/*.!(coffee|sass)'],
+        src: [
+          'images/*.!(coffee|sass|jsx)',
+          'js/dependencies/*.!(coffee|sass|jsx)',
+          'styles/*.!(coffee|sass|jsx)',
+          'templates/*.!(coffee|sass|jsx)',
+          'favicon.ico',
+          'robots.txt'
+        ],
         dest: '.tmp/public'
       }]
     },
