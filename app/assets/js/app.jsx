@@ -1,3 +1,9 @@
 import React from 'react';
+import ReactDOM from 'react-dom';
+import MainComponent from './components/MainComponent';
 
-console.log(React);
+const application = document.getElementById('application');
+ReactDOM.render(
+  <MainComponent/>,
+  application
+);
