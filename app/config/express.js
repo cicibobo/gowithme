@@ -1,9 +1,6 @@
-ar passport = require('passport')
-  , GitHubStrategy = require('passport-github').Strategy
+var passport = require('passport')
   , FacebookStrategy = require('passport-facebook').Strategy
-  , GoogleStrategy = require('passport-google-oauth').OAuth2Strategy
-  , TwitterStrategy = require('passport-twitter').Strategy;
-
+  , GoogleStrategy = require('passport-google-oauth').OAuth2Strategy;
 
 var verifyHandler = function(token, tokenSecret, profile, done) {
   process.nextTick(function() {
@@ -64,8 +61,8 @@ module.exports.http = {
     }, verifyHandler));
 
     passport.use(new GoogleStrategy({
-      clientID: 'YOUR_CLIENT_ID',
-      clientSecret: 'YOUR_CLIENT_SECRET',
+      clientID: '106687399261-r12h56k70ifv0ilk0qkq8fdoh71jjg8b.apps.googleusercontent.com',
+      clientSecret: 'T0zR0BPSE2s3iJQNyTSrGqxS',
       callbackURL: 'http://localhost:1337/auth/google/callback'
     }, verifyHandler));
 
