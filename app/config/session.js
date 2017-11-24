@@ -97,4 +97,15 @@ module.exports.session = {
   //   }
   // }
 
+
+  adapter: 'mongo',
+  host: 'ds159845.mlab.com',
+  port: 59845,
+  db: 'sails-social-auth',
+  username: 'root',
+  password: 'q1w2e3r4t5',
+  collection: 'sessions',
+
+  stringify:true
+
 };
