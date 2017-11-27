@@ -12,7 +12,8 @@ var verifyHandler = function(token, tokenSecret, profile, done) {
         var data = {
           provider: profile.provider,
           uid: profile.id,
-          name: profile.displayName
+          name: profile.displayName,
+          image: profile.photos[0].value
         };
         if (profile.emails && profile.emails[0] && profile.emails[0].value) {
           data.email = profile.emails[0].value;
@@ -23,7 +24,7 @@ var verifyHandler = function(token, tokenSecret, profile, done) {
         if (profile.name && profile.name.familyName) {
           data.lastname = profile.name.familyName;
         }
-        User.create(data, function(err, user) {
+          User.create(data, function(err, user) {
           return done(err, user);
         });
       }

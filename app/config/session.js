@@ -99,13 +99,13 @@ module.exports.session = {
 
 
   adapter: 'mongo',
-  host: 'ds159845.mlab.com',
-  port: 59845,
-  db: 'sails-social-auth',
-  username: 'root',
-  password: 'q1w2e3r4t5',
+  url: 'mongodb://root:q1w2e3r4t5@ds159845.mlab.com:59845/sails-social-auth', // user, password and port optional
+  // host: 'ds159845.mlab.com',
+  // port: 59845,
+  // db: 'sails-social-auth',
+  // username: 'root',
+  // password: 'q1w2e3r4t5',
   collection: 'sessions',
-
-  stringify:true
+   stringify:true
 
 };
