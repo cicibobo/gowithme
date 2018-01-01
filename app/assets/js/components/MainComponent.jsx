@@ -14,8 +14,8 @@ export default class MainComponent extends React.Component {
           <Header/>
           <Switch>
             <Route exact path='/' component={Landing}/>
-            <Route  path='/signup' component={Signup}/>
-            <Route  path='/signin' component={Signin}/>
+            <Route  path='/signin/google' component={Signin}/>
+            <Route  path='/signin/facebook' component={Signin}/>
           </Switch>
         </div>
       </HashRouter>

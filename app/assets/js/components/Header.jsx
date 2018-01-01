@@ -6,8 +6,8 @@ export default  ()=>{
     <nav className="navbar">
       <div className="container">
         <ul>
-          <li><Link to='/signin' >Sign In</Link></li>
-          <li><Link to='/signup' >Sign Up</Link></li>
+          <li><a href='/auth/google' >Sign In with Google</a></li>
+          <li><a href='/auth/facebook' >Sign In with Facebook</a></li>
         </ul>
       </div>
     </nav>
