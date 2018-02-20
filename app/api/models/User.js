@@ -8,11 +8,19 @@ module.exports = {
   adapter: 'mongo',
   attributes: {
     provider: 'STRING',
-    uid: 'STRING',
+    uid: {
+      type: 'STRING',
+      primaryKey: true,
+      required: true
+    },
     name: 'STRING',
     email: 'STRING',
     firstname: 'STRING',
-    lastname: 'STRING'
+    lastname: 'STRING',
+    trips: {
+      collection: 'trip',
+      via: 'tripLeader'
+    }
   }
 };
 
